@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+			<meta name="description" content="Register yourself on unite to enjoy a lovely conversations with loveones.">
+		    <meta name="keywords" content="unite, chatting, social, unite login page">
+			<title> Log in</title>
+			<style>
+				html{
+					height: 100%;
+					}
+				body{
+					background-image: linear-gradient(to top left, #2b547e, #151b54);
+					}
+                img{
+				border: 4px groove #2554c7;
+				border-radius: 20px;
+				margin-top: 15%;
+				box-shadow: 4px 5px 5px #1f1f1f;
+				}
+				input[type=password]{
+					width: 80%;
+					height: 45px;
+					margin: 20px auto auto 30px;
+					border-radius: 15px;
+					border: 3px groove #95b9c7;
+					background-color: #addfff;
+					}
+					input[type=password]:focus{
+						outline: none;
+						border: 3px groove #3090c7;
+						background-color: #87afc7;
+						}
+					input[type=text]{
+					width: 80%;
+					height: 45px;
+					margin: 20px auto auto 30px;
+					border-radius: 15px;
+					border: 3px groove #95b9c7;
+					background-color: #addfff;
+					}
+					input[type=text]:focus{
+						outline: none;
+						border: 3px groove #3090c7;
+						background-color: #87afc7;
+						}
+						input[type=checkbox]{
+							margin-top: 15px;
+							margin-left: 30px;
+							
+							}
+							label{
+								
+								position: relative;
+								bottom: 2px;
+								}
+					form{
+						border: groove 2px #79baec!important;
+						background-color: #ccffff;
+						margin-top: 20px;
+					border-radius: 10px;
+					width: 80%;
+					margin-left: 32px;
+						}
+						input[type=reset]{
+					background-color: #778899;
+					border: 3px groove #2f4f4f;
+					width: 20%;
+					height: 35px;
+					color: #d3d6d4;
+					font-weight: bold;
+					font-size: 20px;
+					margin-left: 35px;
+					border-radius: 10px;
+					
+					}
+					input[type=reset]:focus{
+						background-color: #515151;
+						border: 3px groove #959595;
+						color: black;
+						outline: none;
+						}
+						.log{
+							background-color: #003f7e;
+							width: 40%;
+							height: 50px;
+							border: 3px groove #2554c7;
+							font-weight: bold;
+							font-size: 30px;
+							color: #82cafa;
+						border-radius: 20px;
+						margin-top: 10px;
+						box-shadow: 4px 4px 5px #1f1f1f;
+							}
+							.log:focus{
+								background-color: #1569c7;
+								border: 3px groove #728fce;
+								color: #95b9c7;
+								outline: none;
+								}
+								a{
+									color: #00ffff;
+									text-decoration: none;
+									font-size: 20px;
+								  margin-left: 42%;
+								position: relative;
+								 bottom: 90px;
+									}
+				</style>
+		</head>
+		<body>
+			<center><img src="images/main.jpg" width="60%" height="200px"></center>
+			<form id="login" action="home.html" method="post">
+				<input type="text" placeholder="  enter  your username" required autofocus>
+				<input type="password" placeholder="  enter your password" minlength="8" maxlength="20" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,20}$"  oninvalid="setCustomValidity('please enter password more than 8 characters alingwith uppercase and lowercase alphabhets, number, and special characters between these special characters !@#$%^&*_=+- inputs.')" oninput="setCustomValidity('')" required><br>
+					<input type="checkbox" value="remember me" id="rem"> <label  for="rem">Remember me</label>
+					</form>
+				 	<input type="reset" form="login">
+                <center>  <input type="submit" class="log" value="Log in" form="login"> </center>
+                <a href="unite.html">Forgot password?</a>
+		</body>
+		
+			

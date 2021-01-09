@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+			<meta name="description" content="Starting page of Unite, click on start button to register.">
+		    <meta name="keywords" content="unite, chatting, social,">
+			<title>Unite</title>
+	        <style>
+		html{
+			height: 100%;
+			}
+		
+body{
+		background-image: linear-gradient(to bottom right, #1c86ee, #4973ab);
+		}
+		
+	
+			
+		.go{
+			width: 40%;
+			height: 10%;
+			background-color: #1e90ff;
+			border: 6px ridge #4169e1;
+			margin-top: 140px;
+			box-shadow: 6px 4px 6px #000080;
+			border-radius: 7px;
+	       
+			}
+			
+			
+		
+			
+			
+			
+				
+			.link{
+				text-decoration: none;
+				font-size: 2.2rem;
+				color: #000080;
+				font-weight: bold;
+				text-shadow: 2px 0px 1px #2ed2d2;
+				
+				}
+		                text{
+			                    font-family: fantasy;
+			                    text-transform: uppercase;
+		                        animation-name: font;
+		                        animation-duration: 2s;
+		                        animation-delay: 0s;
+		                        animation-iteration-count: infinite;
+		                        animation-timing-function: linear;
+		                       
+			                   }
+			
+		
+			@keyframes font {
+				0% { opacity: 1.0;}
+				100% { opacity: 0.0;}
+				}
+				svg{
+					margin-top: 30%;
+					margin-left: 25%;
+					}
+				
+          button:focus{
+          	outline: none;
+          }
+            
+                   
+				  
+			</style>
+	    </head>
+	    <body>
+		
+<svg height="150" width="150">
+			<defs>
+				   <filter id="f2" x="0" y="0" width="200%" height="200%">
+      <feOffset result="offOut" in="SourceGraphic" dx="7" dy="9" />
+      <feGaussianBlur result="blurOut" in="offOut" stdDeviation="12" />
+      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+    </filter>
+				<linearGradient id="grad1" x1="100%" y1="0%" x2="0%" y2="100%">
+					<stop offset="0%"
+					style="stop-color: #00bfff; stop-opacity: 1;"/>
+					<stop offset="100%"
+					style="stop-color: #1e90ff; stop-opacity: 1;"/>
+				</linearGradient>
+			</defs>
+			<rect width="125" height="125" fill="url(#grad1)" filter="url(#f2)" stroke="#00008b" stroke-width="2px"/>
+			
+			<animatetransform attributeName="transform" attributeType="XML" type="rotate" from="0" to="360" dur="4s" repeatCount="indefinite"/>
+			<text fill="#00008b" font-size="33" x="11" y="72" text-decoration="underline" class="font">unite</text>
+</svg>
+<center><button onclick="myButton()" type="button" class="go"> <a  class="link" href="signup.html"> START </a> </button></center>
+
+			<script>
+                 function myButton() {
+				var poke = document.getElementsByTagName("button")[0];
+                 poke.css.style.backgroundColor = "red";
+	            }
+           </script>
+		</body>
+    </html>

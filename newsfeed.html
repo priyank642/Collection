@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+			<meta name="description" content="Register yourself on unite to enjoy a lovely conversations with loveones.">
+		    <meta name="keywords" content="unite, chatting, social, unite news feed">
+			<title>News Feed</title>
+			<style>
+				html{
+					height: 100%;
+					}
+				body{
+					margin: 0px;
+					padding: 0px;
+					width: auto;
+					height: auto;
+             background-image: linear-gradient(to bottom right, #1c86ee, #4973ab);
+				}
+				#photo{
+					width: 120px;
+					height: 30px;
+					background-color: #add8e6;
+					color: black;
+					border: 1px outset black;
+					font-weight: bold;
+					font-size: 1rem;
+					margin-right: 10px;
+				 }
+				#video{
+					width: 120px;
+					height: 30px;
+					background-color: #add8e6;
+					color: black;
+					border: 1px outset black;
+					font-weight: bold;
+					font-size: 1rem;
+					margin-left: 10px;
+					}
+					#upload{
+						width: 100%;
+						height: 150px;
+						background-color: #98afc7;
+						border: 1px double black;
+					   
+						}
+						button{
+							margin-bottom: 10px;
+							border-radius: 15px;
+							}
+							button:focus{
+								outline: none;
+								}
+							input[type=text]{
+								height: 50px;
+								border: none;
+								width: 90%;
+								font-size: 25px;
+								background-color: #98afc7;
+								}
+								input[type=text]:focus{
+									outline: none;
+									}
+								#post{
+									width: 120px;
+					height: 30px;
+					background-color: #2b3856;
+					color: white;
+					border: 1px double black;
+					font-weight: bold;
+					font-size: 1rem;
+					margin-top: 10px;
+					}
+					#post:focus{
+						background-color: #2b547e;
+						color: black;
+						}
+					#photo:focus{
+						background-color: #4863a0;
+						color: white;
+						}
+									#video:focus{
+						background-color: #4863a0;
+						color: white;
+						}
+		   </style>
+		</head>
+		<body>
+			<center><div id="upload">
+			<form>
+			<input type="file" id="image" accept="image/*" style="display: none">
+			<input type="file" id="video" accept="video/*" style="display: none">
+			
+				</form>
+				<button id="photo" onclick="myPhoto()">Upload Photo</button>
+				<button id="video" onclick="myVideo()">Upload Video</button>
+				<input type="text" placeholder=" type something here......">
+					<button id="post">Post</button>
+				</div></center>
+				<script>
+					function myPhoto() {
+						document.getElementById("image").click();
+						}
+						function myVideo() {
+						document.getElementById("video").click();
+						}
+				</script>
+		</body>
+		</html>
